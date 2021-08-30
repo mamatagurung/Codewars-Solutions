@@ -18,12 +18,12 @@
 bool in_asc_order( int arr[], int n) {
 
 //Code please
- int i;
-  int check = arr[n];
-  for(i = 0;i<=n;i++)
-{
-    if(check < arr[i])
-      return false;
+ int i,j;
+  for(i=0;i<n-1;i++){
+    for(j=i+1;j<n;j++){
+      if(arr[i]>arr[j])
+        return false;
 }
-return true;
+}
+  return true;
   }
